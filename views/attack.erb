@@ -1,5 +1,5 @@
-<P><%= @player1.name %> attacks <%= @player2.name %>.</P>
-<P><%= @player2.name %>: <%=@player2.hit_points %>HP</P>
+<P><%= @game.player1.name %> attacks <%= @game.player2.name %>.</P>
+<P><%= @game.player2.name %>: <%=@game.player2.hit_points %>HP</P>
 
 <form action='/play' method='get'>
   <div>

@@ -10,10 +10,10 @@ describe Game do
       expect(game.players).to eq [player1, player2]
     end
   end
-
-  context '#attack'
+  context '#attack' do
     it 'calls #reduce_hp on the Player' do
-      expect(player1).to receive(:reduce_hp)
-      game.attack(player1)
+      expect(game.player1).to receive(:reduce_hp)
+      game.attack(game.player1)
     end
+  end
 end
