@@ -22,7 +22,7 @@ class Battle < Sinatra::Base
   end
 
   get '/attack' do
-    $player2.attacked
+    $player1.attack($player2)
     @player1_name = $player1.name
     @player2_name = $player2.name
     @player2_hitpoints = $player2.hit_points
