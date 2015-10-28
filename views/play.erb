@@ -1,9 +1,9 @@
 <div>
-<p>Player one: <%=@Player_one %> Vs Player two: <%=@Player_two %></p>
-<p><%=@Player_two %>: 100HP</p>
+<p>Player one: <%=@player1_name %> Vs Player two: <%=@player2_name %></p>
+<p><%=@player2_name %>: 100HP</p>
   <form action='/attack' method='get'>
     <div>
-      <button class='button' type="submit">Attack <%=@Player_two %></button>
+      <button class='button' type="submit">Attack <%=@player2_name %></button>
     </div>
   </form>
 </div>
