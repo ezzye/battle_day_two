@@ -11,7 +11,7 @@ class Player
   end
 
   def reduce_hp
-    self.hit_points = self.hit_points - 20
+    self.hit_points -= 20
   end
 
   private

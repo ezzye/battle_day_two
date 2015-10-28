@@ -1,2 +1,8 @@
-<P><%= @player1_name %> attacks <%= @player2_name %>.</P>
-<P><%= @player2_name %>: <%=@player2_hitpoints %>HP</P>
+<P><%= @player1.name %> attacks <%= @player2.name %>.</P>
+<P><%= @player2.name %>: <%=@player2.hit_points %>HP</P>
+
+<form action='/play' method='get'>
+  <div>
+    <button class='button' type="submit">Return</button>
+  </div>
+</form>
