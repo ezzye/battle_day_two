@@ -5,12 +5,18 @@
 
 
 feature 'Enter user names' do
-  scenario 'submitting names' do
+  background(:each) do
     visit('/')
-    fill_in :Player_one, with: 'Rafael'
+    fill_in :Player_one, with: 'Rob'
     fill_in :Player_two, with: 'Ezzy'
     click_button 'Submit'
-    expect(page).to have_content 'Player one: Rafael Vs Player two: Ezzy'
+  end
+
+  scenario 'display names' do
+    expect(page).to have_content 'Player one: Rob Vs Player two: Ezzy'
+  end
+  scenario 'display hit points' do
+    expect(page).to have_content 'Ezzy: 100HP'
   end
 end
 
