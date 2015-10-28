@@ -14,12 +14,6 @@ describe Player do
       expect(player.hit_points).to eq 100
     end
   end
-  context '#attack' do
-    it 'reduces other player\'s hit points by 20' do
-      player.attack(player2)
-      expect(player2.hit_points).to eq 80
-    end
-  end
   context '#reduce_hp' do
     it 'reduces player\'s hit points by 20' do
       player.reduce_hp
